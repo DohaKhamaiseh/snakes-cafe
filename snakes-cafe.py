@@ -46,11 +46,18 @@ while(quit):
  #count+=1
  
  arr.append(order)
+
  if len(arr) > 1 and arr[-1] != arr[-2]:
     count = 1
+    print(f"** {count} order of {order} has been added to your meal **")
  else:
-    count += 1
- print(f"** {count} order of {order} has been added to your meal **")
+    if (len(arr)==1):
+     count = 1
+     print(f"** {count} order of {order} has been added to your meal **")
+    else :
+     count += 1
+     print(f"** {count} orders of {order} has been added to your meal **")
+
  
   
  
